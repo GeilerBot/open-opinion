@@ -1,14 +1,11 @@
 import React from "react";
 import { Wrapper, Container } from "./PinElements";
-import pinData from "../../data/Pins.data";
 
-function Pin() {
+function Pin(props) {
 	return (
 		<Wrapper>
 			<Container>
-				{pinData.map((pins, index) => {
-					return <img src={pins.img} alt='test' id={pins.id} />;
-				})}
+				<img src={props.img} alt='test' id={props.id} />
 			</Container>
 		</Wrapper>
 	);

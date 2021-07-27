@@ -10,8 +10,7 @@ export const Wrapper = styled.div`
 `
 
 export const Container = styled.div`
-  display: flex;
-  width: 80%;
+  margin: 0 auto;
   height: 100%;
   background-color: white;
 `
