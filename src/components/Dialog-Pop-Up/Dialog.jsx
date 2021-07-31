@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import {DialogStyles} from "./DialogElements";
+import { DialogStyles } from "./DialogElements";
 
 /*let dialogCloseButtonStyles = {
     marginBottom: '15px',
@@ -14,7 +14,6 @@ import {DialogStyles} from "./DialogElements";
 };*/
 
 function Dialog(props) {
-
   /*let dialogStyles = {
     width: "auto",
     maxWidth: "100%",

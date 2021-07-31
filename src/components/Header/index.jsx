@@ -24,6 +24,7 @@ function Header() {
   const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
+    /*await google ad video*/
     setOpen(true);
   };
 

@@ -6,12 +6,14 @@ import "./mainboard.css";
 
 function Mainboard() {
   const [pinData, setPinData] = useState([]);
-
-  useEffect(() => {
-    axios.get("/post").then((data) => {
+  async function getPost() {
+    (await axios()).get("/post?sort=-views").then((data) => {
       console.log(data);
       setPinData(data.data);
     });
+  }
+  useEffect(() => {
+    getPost();
   }, []);
   return (
     <div>

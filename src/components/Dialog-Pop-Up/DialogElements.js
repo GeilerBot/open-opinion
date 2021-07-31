@@ -28,7 +28,7 @@ export const StyledIconButton = styled(IconButton)`
 export const DialogBox = styled.div`
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media screen and (max-width: 900px) {
     justify-content: unset;
