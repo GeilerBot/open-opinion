@@ -11,6 +11,11 @@ export const Container = styled.div`
   box-sizing: border-box;
   cursor: pointer;
   width: 236px;
+  position: relative;
+  
+  :hover {
+    padding: 5px;
+  }
   
   img {
     width: 100%;
@@ -18,5 +23,15 @@ export const Container = styled.div`
     cursor: zoom-in;
     border-radius: 16px;
     object-fit: cover;
+  }
+  
+  .views {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    padding: 5px;
+    color: white;
+    background-color: transparent;
   }
 `
